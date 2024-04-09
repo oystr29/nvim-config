@@ -18,14 +18,6 @@ return {
         indicator = {
           style = 'underline',
         },
-        offsets = {
-          {
-            filetype = 'neo-tree',
-            text = 'Neovim 🐱',
-            highlight = 'Directory',
-            text_align = 'left',
-          },
-        },
       },
     }
   end,
