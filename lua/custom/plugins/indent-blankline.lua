@@ -1,7 +1,16 @@
 return {
   'lukas-reineke/indent-blankline.nvim',
   main = 'ibl',
-  opts = {},
+  config = function()
+    require('ibl').setup {
+      exclude = {
+        filetypes = { 'yaml', 'lua' },
+      },
+      scope = {
+        exclude = { language = { 'yaml', 'lua' } },
+      },
+    }
+  end,
   init = function()
     local highlight = {
       'RainbowRed',
